@@ -248,70 +248,6 @@ body {
 
 
 
-
-/* paginaparchi */
-/* 
-.altri-parchi {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  gap: 40px;
-  padding: 30px;
-  margin: 40px;
-}
-
-.elenco-altri {
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto; 
-  max-width: 400px; 
-  width: 100%;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 40px;
-}
-
-.elenco-altri img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-.elenco-altri::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.elenco-altri a {
-  position: absolute;
-  bottom: 12px;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  z-index: 2;
-  font-weight: bold;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  padding-left: 10px;
-}
-
-
-.elenco-altri a:hover {
-  color: #ff0059;
-  transition: color 0.2s ease;
-}
-
- */
-
-
  .altri-parchi {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
@@ -510,141 +446,37 @@ footer p{
 
 
 
-
-
-/* Smartphone - sotto i 600px */
+/* SOLO AGGIUSTAMENTO SPAZIO, SENZA SPOSTARE IL LAYOUT */
 @media (max-width: 600px) {
   body {
-    font-size: 14px;
+    overflow-x: hidden;
   }
 
-  .info, .info4 {
-    height: 250px;
-    background-position: center center;
+  .paragrafo, 
+  .titolo, 
+  .testo-finale, 
+  .griglia-testo, 
+  .pagina-sticky, 
+  .contenuti-scrollabili {
+    margin-left: 10%;
+    margin-right: 20%;
   }
 
-  .nav-bar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .nav-bar p {
-    margin-left: 0;
-    margin-bottom: 10px;
-    font-size: 12px;
-  }
-
-  .nav-bar a {
-    margin: 5px 0;
-    font-size: 12px;
-  }
-
-  .content h1, .content1 h1 {
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .content p, .content1 p {
-    font-size: 12px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .paragrafo {
-    margin: 50px 20px;
-  }
-
-  .paragrafo p, .paragrafo li, .paragrafo h3 {
-    max-width: 100%;
-    font-size: 14px;
-  }
-
-  .titolo a {
-    margin-left: 20px;
-    font-size: 20px;
-  }
-
-  .immagine-box {
-    height: 220px;
-    margin-bottom: 60px;
+  .content h1, 
+  .content1 h1, 
+  .content p {
+    margin-left: 10%;
+    margin-right: 20px;
   }
 
   .overlay-testo {
-    font-size: 16px;
     margin-left: 20px;
-    bottom: 10px;
+    width: 90%;
   }
 
-  .testo-finale {
-    margin: 20px;
-    font-size: 14px;
-  }
-
-  .immagini-full {
-    margin: 0;
-  }
-
-  .altri-parchi {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .elenco-altri img {
-    height: 200px;
-  }
-
-  .elenco-altri a {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-
-  .griglia-testo {
-    flex-direction: column;
-    margin: 20px;
-    gap: 20px;
-  }
-
-  .griglia p {
-    padding-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    max-width: 100%;
-  }
-
-  .griglia1 img {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .pagina-sticky {
-    flex-direction: column;
-  }
-
-  .testo-sticky, .contenuti-scrollabili {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .blocco img {
-    height: 200px;
-    margin-bottom: 50px;
-  }
-
-  .blocco h3, .blocco li {
-    padding: 0 10px;
-    font-size: 16px;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  footer p {
-    margin: 10px 0;
-    font-size: 12px;
+  .elenco-altri {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -652,9 +484,6 @@ footer p{
 
 
 
-
-
-/* 
   
 
 @media (max-width: 480px) {
