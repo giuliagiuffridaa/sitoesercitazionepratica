@@ -63,7 +63,7 @@ body {
 .nav-bar {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+ 
   width: 100%;
 }
 
@@ -447,7 +447,7 @@ footer p{
 
 
 /* SOLO AGGIUSTAMENTO SPAZIO, SENZA SPOSTARE IL LAYOUT */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
@@ -508,7 +508,6 @@ footer p{
 }
 
 
-/* 📱 MEDIA QUERY per 480px */
 @media (max-width: 480px) {
   .griglia-testo {
     gap: 20px;
@@ -531,6 +530,4 @@ footer p{
     font-size: 15px;
   }
 }
-
-
  */
