@@ -63,14 +63,14 @@ body {
 .nav-bar {
   display: flex;
   align-items: center;
- 
   width: 100%;
+  margin-top: 10px;
 }
 
 .nav-bar p {
+  width: 50%;
   margin: 0;
-  padding: 5px;
-  margin-left: 50px;
+  margin-left: 5%;
   font-size: 14px;
 }
 
@@ -79,39 +79,37 @@ body {
 }
 
 .nav-bar a {
-  padding: 15px;
   color: white;
   text-decoration: none;
   font-size: 12px;
   margin: 0;
-  margin-left: 25px; 
+  margin-right: 5%; 
 }
 
 
 .content {
-  max-width: 500px;
+  max-width: 70%;
+  margin-left: 5%;
 }
 
 .content h1 {
   font-size: 26px;
   margin: 0;
-   margin-left: 60px;
 }
 
 .content1 {
-  max-width: 500px;
+  margin-left: 5%;
+  max-width: 80%;
 }
 
 .content1 h1 {
   font-size: 26px;
   margin: 0;
-   margin-left: 60px;
    margin-bottom: 70px;
 }
 
 .content p {
   margin-bottom: 60px;
-  margin-left: 60px;
   font-size: 15px;
   font-style: italic;
 }
@@ -125,42 +123,69 @@ body {
 
 /* paragrafo */
 .paragrafo{
-  margin-left: 100px;
-  margin-top: 150px;
+  margin-left: 7%;
+  margin-top: 200px;
   margin-bottom: 150px;
+  align-items: center;
+
 }
 
 
 .paragrafo p{
-  max-width: 400px;
+  max-width: 50%;
   line-height: 1.6;
+  margin-left: 15%;
+  align-items: center;
+  margin-top: 30px;
 }
 
 
 .paragrafo li{
-  max-width: 400px;
+  max-width: 50%;
   line-height: 1.6;
+  margin-left: 15%;
+  align-items: center;
+  margin-top: 10px;
+
+
 }
 
 
 
 .paragrafo h3{
   font-size: 20px;
-  max-width: 400px;
+  max-width: 50%;
   line-height: 1.4;
+  margin-left: 15%;
+  align-items: center;
+  margin-top: 30px;
+
+
 }
+
+
+.paragrafo h4{
+  max-width: 50%;
+  line-height: 1.4;
+  margin-left: 15%;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
 
 .titolo a{
   text-decoration: none;
   color: black;
   font-weight: 900;
-  margin-left: 100px;
+  margin-left: 6%;
   font-size: 24px;
 }
 
 .titolo{
   margin-top: 200px;
   margin-bottom: 50px;
+  margin-left: 15%;
 }
 
 .titolo a:hover{
@@ -168,6 +193,23 @@ body {
   transition: color 0.2s ease;
 }
 
+
+.titolo2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  margin-left: 13%;
+  font-size: 24px;
+}
+
+.titolo2{
+  margin-top: 200px;
+}
+
+.titolo2 a:hover{
+  color: #ff0059; 
+  transition: color 0.2s ease;
+}
 
 .immagini-full {
   margin: 0;
@@ -212,7 +254,7 @@ body {
   text-decoration: none;
   z-index: 2; 
   width: 80%;
-  margin-left: 90px;
+  margin-left: 9%;
   font-size: 25px;
   font-weight: bold;
 }
@@ -234,8 +276,8 @@ body {
 }
 
 .testo-finale{
-  margin-left: 80px;
-  max-width: 400px;
+  margin-left: 8%;
+  max-width: 50%;
   font-size: 16px;
 }
 
@@ -252,25 +294,23 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   gap: 40px;
-  padding: 30px;
-  margin: 40px;
+  padding: 5%;
+  margin: 4%;
 }
 
 .elenco-altri {
   overflow: hidden;
   margin: 0 auto; 
-  max-width: 400px; 
+  max-width: 80%; 
   width: 100%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 40px;
 }
 
 .elenco-altri img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   display: block;
   border-radius: 10px;
@@ -280,8 +320,8 @@ body {
   color: black;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px; 
-  border-radius: 10px;
+  margin-top: 15px; 
+  margin-bottom: 20px;
 }
 
 .elenco-altri a:hover {
@@ -302,7 +342,7 @@ body {
 .griglia-testo {
   display: flex;
   gap: 90px;
-  margin: 60px;
+  margin: 12%;
   flex-wrap: nowrap;
   padding-left: 40px;
 }
@@ -531,3 +571,49 @@ footer p{
   }
 }
  */
+
+
+ @media (max-width: 480px) {
+  .griglia-testo {
+    margin: 30px;
+    gap: 50px;
+  }
+
+  .griglia1 {
+    min-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .griglia-testo {
+    margin: 30px;
+    gap: 50px;
+  }
+
+  .griglia1 {
+    min-width: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .griglia-testo {
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .griglia1 {
+    min-width: 140px; 
+  }
+
+  .griglia1 .sticky {
+    top: 10px; 
+  }
+
+  .griglia1 img {
+    margin-top: 10px; 
+  }
+
+  .griglia p {
+    font-size: 15px;
+  }
+}
