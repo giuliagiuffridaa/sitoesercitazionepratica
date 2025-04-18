@@ -512,6 +512,141 @@ footer p{
 
 
 
+/* Smartphone - sotto i 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .info, .info4 {
+    height: 250px;
+    background-position: center center;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-bar p {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .nav-bar a {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  .content h1, .content1 h1 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .content p, .content1 p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .paragrafo {
+    margin: 50px 20px;
+  }
+
+  .paragrafo p, .paragrafo li, .paragrafo h3 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .titolo a {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .immagine-box {
+    height: 220px;
+    margin-bottom: 60px;
+  }
+
+  .overlay-testo {
+    font-size: 16px;
+    margin-left: 20px;
+    bottom: 10px;
+  }
+
+  .testo-finale {
+    margin: 20px;
+    font-size: 14px;
+  }
+
+  .immagini-full {
+    margin: 0;
+  }
+
+  .altri-parchi {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .elenco-altri img {
+    height: 200px;
+  }
+
+  .elenco-altri a {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .griglia-testo {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .griglia p {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .griglia1 img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .pagina-sticky {
+    flex-direction: column;
+  }
+
+  .testo-sticky, .contenuti-scrollabili {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .blocco img {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .blocco h3, .blocco li {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer p {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+}
 
 
 
@@ -519,11 +654,9 @@ footer p{
 
 
 
-
-
+/* 
   
 
-/* Responsive - solo margini più piccoli, NON cambia flex! */
 @media (max-width: 480px) {
   .griglia-testo {
     margin: 30px;
@@ -571,4 +704,4 @@ footer p{
 }
 
 
-
+ */
