@@ -163,7 +163,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
   width: 90%;
   height: 1px;
   background-color: rgb(178, 170, 170);
@@ -372,10 +372,9 @@ body {
 
 .griglia-testo {
   display: flex;
-  gap: 90px;
   margin: 12%;
   flex-wrap: nowrap;
-  padding-left: 40px;
+  /* padding-left: 30px; */
 }
 
 
@@ -391,18 +390,25 @@ body {
 }
 
 .griglia1 img {
-  width: 100%;
-  margin-top: 20px;
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-left: 9%;
 }
 
-
+.griglia1 h2{
+  margin-left: 9%;
+}
 
 
 
 .griglia {
   flex: 2;
   margin-top: 60px;
+  margin-left: 20%;
 }
 
 
@@ -410,8 +416,8 @@ body {
 .griglia p {
   padding-top: 40px;
   margin-bottom: 20px;
-  line-height: 1.6;
-  max-width: 80%;
+  line-height: 1.8;
+  max-width: 90%;
 }
 
 
@@ -422,7 +428,7 @@ body {
   align-items: flex-start;
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 90%;
 }
 
 .testo-sticky {
@@ -441,7 +447,7 @@ body {
   top: 100px;
   margin-top: 20px;
   margin-bottom: 100px;
-  margin-left: 15%;
+  margin-left: 35%;
   font-size: 20px;
 }
 
@@ -456,21 +462,25 @@ body {
   margin-top: 200px;
   margin-bottom: 100px;
   margin-right: 7%;
+  margin-left: 10%;
 }
+
 
 
 .blocco img {
-  width: 100%;
-  height: 280px;
+  width: 80%;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 100px;
+  margin-left: 8%;
 }
 
-.blocco li {
-    width: 100%;
+  .blocco li {
+    width: 90%;
     margin-bottom: 20px;
     line-height: 2.0;
+    margin-left: 6%;
   }
 
   .blocco h3 {
@@ -478,8 +488,17 @@ body {
     padding-top: 40px;
     margin-bottom: 20px;
     line-height: 1.6;
+    margin-left: 6%;
   }
 
+
+
+  .blocco p {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-left: 6%;
+  }
 
 
 
@@ -505,7 +524,17 @@ footer p{
 
 
 
- @media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 480px) {
 
   .testo {
     padding: 10px 20px;
@@ -634,35 +663,15 @@ footer p{
     font-size: 14px;
   }
 
-}
-
-
- @media (max-width: 480px) {
-  .griglia-testo {
+  
+ .griglia-testo {
     margin: 30px;
     gap: 50px;
   }
 
-  .griglia1 {
-    min-width: 200px;
-  }
-}
-@media (max-width: 768px) {
-  .griglia-testo {
-    margin: 30px;
-    gap: 50px;
-  }
-
-  .griglia1 {
-    min-width: 200px;
-  }
-}
-
-
-@media (max-width: 480px) {
   .griglia-testo {
     gap: 20px;
-    margin: 20px;
+    margin: 15px;
   }
 
   .griglia1 {
@@ -680,4 +689,24 @@ footer p{
   .griglia p {
     font-size: 15px;
   }
-}
+ }
+
+
+ @media (max-width: 768px) {
+  .griglia-testo {
+    margin: 30px;
+    gap: 50px;
+  }
+
+  .griglia1 {
+    min-width: 200px;
+  }
+
+  .griglia {
+      margin: 11% 0 30% 0;
+  }
+} 
+
+
+
+
