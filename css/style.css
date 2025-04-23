@@ -708,14 +708,18 @@ footer p{
 
 @media (max-width: 480px) {
   
-  /* NAVBAR identica a desktop */
-  .nav-bar {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+  .nav-bar p {
+    width: 50%;
+    margin-left: 5%;
+    font-size: 14px;
+  }
+  
+  .nav-bar a {
+    font-size: 12px;
+    margin-right: 5%;
   }
 
+  
   .nav-bar p {
     width: 50%;
     margin-left: 5%;
