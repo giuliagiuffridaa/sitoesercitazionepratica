@@ -707,19 +707,9 @@ footer p{
 
 
 @media (max-width: 480px) {
-  
-  .nav-bar p {
-    width: 50%;
-    margin-left: 5%;
-    font-size: 14px;
-  }
-  
-  .nav-bar a {
-    font-size: 12px;
-    margin-right: 5%;
-  }
 
-  
+
+
   .nav-bar p {
     width: 50%;
     margin-left: 5%;
