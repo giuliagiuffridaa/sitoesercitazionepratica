@@ -1,6 +1,4 @@
 
-
-/* Reset base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -370,7 +368,6 @@ body {
 
 
 
-/* attivita`*/
 
 
 
@@ -378,7 +375,6 @@ body {
   display: flex;
   margin: 12%;
   flex-wrap: nowrap;
-  /* padding-left: 30px; */
 }
 
 
@@ -508,7 +504,6 @@ body {
 
 
 
-/* footer */
 footer{
 background-color: black;
 padding: 10px;
@@ -529,11 +524,19 @@ footer p{
 
 
 
-
-
-
-
-
+  @media (max-width: 768px) {
+    .griglia-testo {
+      margin: 30px;
+      gap: 50px;
+    }
+  
+    .griglia1 {
+      min-width: 200px;
+    }
+  
+    
+    
+  } 
 
 
 
@@ -543,6 +546,7 @@ footer p{
   .testo {
     padding: 10px 20px;
   }
+  
 
   .nav-bar p {
     width: auto;
@@ -693,25 +697,6 @@ footer p{
   .griglia p {
     font-size: 15px;
   }
- }
-
-
- @media (max-width: 768px) {
-  .griglia-testo {
-    margin: 30px;
-    gap: 50px;
-  }
-
-  .griglia1 {
-    min-width: 200px;
-  }
-
-  
-} 
-
-
-@media (max-width: 480px) {
-
 
 
   .nav-bar p {
@@ -725,7 +710,6 @@ footer p{
     margin-right: 5%;
   }
 
-  /* ELENCO PARCHI: immagini e testo centrati uno sotto l'altro */
   .altri-parchi {
     display: flex;
     flex-direction: column;
@@ -755,6 +739,7 @@ footer p{
     font-size: 18px;
   }
 
+  
 }
 
 
