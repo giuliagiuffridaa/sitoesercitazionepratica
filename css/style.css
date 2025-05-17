@@ -472,8 +472,7 @@ footer{
   }
   
   .content1 {
-    margin-left: 5%;
-    max-width: 60%;
+    max-width: 65%;
     margin-bottom: 120px;
     margin-left: 10%;
   }
@@ -665,6 +664,7 @@ footer{
 
 .titolo h1 a{
   font-size: 20px;
+  margin-left: 8%;
 }
 
 
