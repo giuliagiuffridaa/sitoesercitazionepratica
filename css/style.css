@@ -150,11 +150,34 @@ body {
 /* paragrafo */
 
 .paragrafo{
-  width: 35%;
+  width: 80%;
+  max-width: 35%;
   margin-left: 5%;
   margin-top: 50px;
   margin-bottom: 150px;
   line-height: 1.3;
+}
+
+.paragrafo2{
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  line-height: 1.3;
+}
+
+
+.paragrafo2 li{
+  margin-bottom: 15px;
+  margin-left: 3%;
+
+}
+
+
+.paragrafo2 h1{
+  margin-bottom: 50px;
+  color: #7f012f;
+  margin-left: 4%;
 }
 
 .paragrafo h3{
@@ -468,11 +491,38 @@ footer{
   
 
 
+
+  .paragrafo2{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    line-height: 1.3;
+  }
+  
+  
+  .paragrafo2 li{
+    margin-bottom: 15px;
+    margin-left: 5%;
+    font-size: 14px;
+  }
+  
+  
+  .paragrafo2 h1{
+    margin-bottom: 50px;
+    color: #7f012f;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+
+
+
+
+
   .paragrafo{
     width: 100%;
-    margin-left: 5%;
+    max-width: 90%;
     margin-top: 100px;
-    margin-left: 5%;
     }
 
   .paragrafo p{
@@ -480,14 +530,14 @@ footer{
     width: 70%;
     line-height: 1.5;
     font-size: 14px;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .paragrafo li{
-    margin-left: 5%;
     font-size: 14px;
-  }
+    margin-left: 10%;
 
+  }
 
 
   .paragrafo h1,h2{
@@ -495,15 +545,15 @@ footer{
     line-height: 1.5;
     font-size: 14px;
     margin-bottom: 30px;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .paragrafo h3{
     flex-direction: column;
     width: 70%;
     line-height: 1.5;
-    font-size: 20px;
-    margin-left: 5%;
+    font-size: 16px;
+    margin-left: 10%;
   }
 
 
@@ -513,7 +563,7 @@ footer{
     width: 70%;
     line-height: 1.5;
     font-size: 20px;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .titolo{
