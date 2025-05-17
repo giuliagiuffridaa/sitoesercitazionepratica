@@ -4,6 +4,8 @@ body {
 }
 
 
+/* navbar */
+
 .info {
   position: relative;
   width: 100%;
@@ -14,6 +16,8 @@ body {
   color: white;
 }
 
+
+
 .info::before {
   content: "";
   position: absolute;
@@ -21,9 +25,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0, 0, 0, 0.7); 
   z-index: 1;
 }
+
 
 .info4 {
   position: relative;
@@ -35,6 +40,8 @@ body {
   color: white;
 }
 
+
+
 .info4::before {
   content: "";
   position: absolute;
@@ -42,7 +49,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0, 0, 0, 0.7); 
   z-index: 1;
 }
 
@@ -62,7 +69,7 @@ body {
 
 .nav-bar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-top: 10px;
   padding-bottom: 10px;
@@ -92,34 +99,33 @@ body {
 }
 
 .nav-bar a {
-  color: white;
+  color: rgb(213, 213, 213);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   margin-right: 5%; 
 }
 
-
+.nav-bar a:hover{
+  color: #b6ffaf;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
 
 
 .content {
   max-width: 90%;
   margin-left: 5%;
   margin-bottom: 60px;
-
+  color: rgb(213, 213, 213);
 }
 
-.content h1 {
-  font-size: 26px;
-  margin: 0;
-  
-}
 
 .content1 {
   margin-left: 5%;
   max-width: 70%;
   margin-bottom: 120px;
-
+  color: rgb(213, 213, 213);
 }
 
 .content1 h1 {
@@ -139,8 +145,12 @@ body {
 
 
 
+
+
+/* paragrafo */
+
 .paragrafo{
-  max-width: 50%;
+  width: 35%;
   margin-left: 5%;
   margin-top: 50px;
   margin-bottom: 150px;
@@ -154,6 +164,9 @@ body {
 
 .paragrafo li{
   margin-bottom: 10px;
+  margin-left: 0;
+  width: 80%;
+  font-size: 15px;
 }
 
 .paragrafo p{
@@ -161,32 +174,46 @@ body {
   line-height: 1.5;
 }
 
-.paragrafo2{
+.titolo2 h1 a{
  margin-left: 5%;
  margin-top: 130px;
+ color: #7f012f;
  }
 
+
 .titolo{
-margin-bottom: 100px;
+ margin-bottom: 100px;
 
 }
+
 .titolo h1 a{
   color: #7f012f;
   margin-left: 8%;
   font-size: 22px;
  }
 
- .testo h2 a{
-      color: #7f012f;
-      font-size: 22px;
+ .paragrafo h1{
+  color: #7f012f;
+  margin-left: 4%;
+  font-size: 22px;
+  margin-bottom: 50px;
  }
 
 
- .titolo a:hover{
-  color: #38d385; 
+ .titolo2 h1 a:hover{
+  color: #b6ffaf; 
   transition: color 0.2s ease;
 } 
 
+ .titolo a:hover{
+  color: #b6ffaf; 
+  transition: color 0.2s ease;
+} 
+
+
+
+
+/* card */
 
 .immagini-blocco {
   display: flex;
@@ -194,16 +221,16 @@ margin-bottom: 100px;
   gap: 8px; 
   padding: 0 40px; 
   margin: 40px 0;
+  margin-bottom: 150px;
 
 }
 
 .card {
-  background-color: white;
+  background-color: #430101;
   text-align: center;
   width: 35%; 
   font-family: sans-serif;
-  color: #333;
-  margin-bottom: 100px;
+  border-radius: 10px;
 }
 
 .card img {
@@ -220,19 +247,27 @@ margin-bottom: 100px;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 900;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  
 }
 
 
 
 
+
+
+
+   
+
+
+/* immaginegrande */
 
 .immagine-box {
   width: 100%;         
@@ -258,57 +293,88 @@ margin-bottom: 100px;
 
 
 
+/* sticky */
 
-
-
-/* Contenitore principale a due colonne */
 .sticky {
   display: flex;
-  gap: 2rem;
-  max-width: 80%;
+  gap: 15%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 10px 60px;
   align-items: flex-start;
+  margin-bottom: 170px;
 }
 
-/* Colonna sticky a sinistra */
 .titolo-sticky {
   flex: 1;
   position: sticky;
   top: 50px;
-  height: fit-content;
+  width: 60%;
+  margin-left: 7%;
+  /* height: fit-content; */
 }
 
-.titolo-sticky h2 {
-  font-size: 26px;
-  color: #560000;
+.titolo-sticky h1 {
+  font-size: 22px;
+  color: #7f012f;
   margin: 0;
 }
 
-/* Colonna scrollabile a destra */
 .contenuti-scrollabili {
   flex: 2;
+  width: 50%;
+  margin-right: 8%;
 }
+
 
 .contenuti-scrollabili img {
-  max-width: 100%;
-  height: 250px;
-  border-radius: 8px;
-  margin-top: 60px;
+  height: 300px;
+  margin-top: 70px;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  display: block;
 }
 
-.contenuti-scrollabili p,li{
-  margin-bottom: 1.2rem;
+.contenuti-scrollabili p,h2{
+  width: 90%;
+  margin-bottom: 20px;
   line-height: 1.5;
   color: #444;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.contenuti-scrollabili h2{
+  width: 90%;
+  margin-left: -7%;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  line-height: 1.5;
+  color: #444;
+  font-size: 18px;
+  font-weight: 900;
+  color: #7f012f;
+}
+
+.contenuti-scrollabili li{
+  width: 90%;
+  margin-left: -5%;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 
 
 
 
+
+/* footer */
+
 footer{
-  background-color: black;
+  background-color: #430101;
   padding: 10px;
   color: white;
   margin-top: 20px;
@@ -317,7 +383,7 @@ footer{
   
   
   footer p{
-    background-color: black;
+    font-size: 14px;
     padding: 20px;
     color: white;
     margin-left: 40px;
@@ -332,30 +398,123 @@ footer{
 
 
 
-/* 🧑‍💻 Responsive: colonna singola e no sticky sotto i 768px */
+/* responsive */
+
+
 @media (max-width: 768px) {
 
 
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+
+  .testo {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 5px;
+  }
+  
+  
+  
+  .nav-bar a {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0;
+    margin-right: 5%; 
+    flex-wrap: wrap;
+  }
+  
+
+  
+  .content h1 {
+    font-size: 20px;
+    margin: 0;
+    
+  }
+
+  .content{
+    max-width: 65%;
+    margin-left: 10%;
+  }
+  
+  .content1 {
+    margin-left: 5%;
+    max-width: 60%;
+    margin-bottom: 120px;
+    margin-left: 10%;
+  }
+  
+  .content1 h1 {
+     font-size: 20px;
+     margin: 0;
+  }
+  
+  .content p {
+    margin-bottom: 60px;
+    font-size: 12px;
+    font-style: italic;
+  }
+  
+
+
   .paragrafo{
-    max-width: 100%;
+    width: 100%;
     margin-left: 5%;
     margin-top: 100px;
-  }
+    margin-left: 5%;
+    }
 
   .paragrafo p{
     flex-direction: column;
     width: 70%;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 14px;
+    margin-left: 5%;
   }
 
-  .paragrafo h2{
+  .paragrafo li{
+    margin-left: 5%;
+    font-size: 14px;
+  }
+
+
+
+  .paragrafo h1,h2{
     flex-direction: column;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 30px;
+    margin-left: 5%;
   }
 
+  .paragrafo h3{
+    flex-direction: column;
+    width: 70%;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+
+
+  .paragrafo h4{
+    flex-direction: column;
+    width: 70%;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-left: 5%;
+  }
 
   .titolo{
     flex-direction: column;
@@ -368,58 +527,106 @@ footer{
   .sticky {
     flex-direction: column;
     width: 70%;
-    margin-bottom: 100px;
-    background-color: rgb(152, 152, 152);
+    margin-bottom: 50px;
+  }
+
+
+  .contenuti-scrollabili{
+    width: 100%;
   }
 
   .contenuti-scrollabili img{
     margin-bottom: 50px;
     flex-direction: column;
     background-size: cover;
-    width: 90%;
+    width: 100%;
+    max-width: 380px;
     height: 200px;
-    border-radius: 20px;
     object-fit: cover;
     background-size: cover;
-    margin-left: 3%;
   }
 
   .titolo-sticky {
     position: static;
-    margin-bottom: 30px;
+    margin-left: 0;
   }
   
-  .sticky h2{
+  .sticky h1{
+    margin-bottom: 30px;
     flex-direction: column;
     width: 100%;
-    font-size: 20px
+    font-size: 20px;
+    
   }
 
-  .contenuti-scrollabili p,li{
+  .contenuti-scrollabili p{
     flex-direction: column;
-    width: 95%;
-    font-size: 16px;
+    width: 85%;
+    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;      
-    color: white;
-
   }
 
-
-
-
-@media (max-width: 768px) {
-  .immagini-blocco {
+  .contenuti-scrollabili h2{
     flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-
-  .card {
     width: 100%;
-    max-width: 350px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px; 
+    padding-left: 10px;
   }
 
+
+  .contenuti-scrollabili li{
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px; 
+    padding-left: 10px;
+  }
+
+
+
+    .immagini-blocco{
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+
+   .card p a{
+     font-size: 13px;
+    }
+
+.card p a:hover{
+  color: #b6ffaf;
+  transition: 0.2 color ease;
+}
+
+
+.titolo{
+  margin-top: 100px;
+}
+
+.titolo h1 a{
+  font-size: 20px;
+}
+
+
+.titolo2 h1 a{
+  font-size: 20px;
+}
+
+
+footer p{
+  font-size: 12px;
+  margin-left: 5%;
+  font-weight: 600;
+}
 
 }
