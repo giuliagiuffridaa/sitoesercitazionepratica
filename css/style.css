@@ -40,6 +40,16 @@ body {
   color: white;
 }
 
+.info2 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/image01.webp'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  object-fit: cover;
+}
 
 
 .info4::before {
@@ -50,6 +60,19 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+
+
+.info2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 
