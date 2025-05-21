@@ -176,7 +176,7 @@ body {
 
 .paragrafo{
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 20px 60px;
   margin-top: 50px;
   margin-bottom: 150px;
@@ -185,7 +185,7 @@ body {
 
 .paragrafo2{
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 20px 60px;
   margin-top: 50px;
   margin-bottom: 150px;
@@ -195,12 +195,14 @@ body {
 
 .paragrafo2 li{
   margin-bottom: 15px;
+  padding-left: 30px;
 }
 
 
 .paragrafo2 h1{
   margin-bottom: 50px;
   color: #7f012f;
+  padding: 20px 40px;
 }
 
 .paragrafo h3{
@@ -260,27 +262,26 @@ body {
 /* card */
 
 .immagini-blocco {
+  width: 100%;
+  max-width: 1250px;
   display: flex;
   justify-content: space-between;
-  gap: 8px; 
-  padding: 0 40px; 
-  margin: 40px 0;
+  gap: 18px; 
+  padding:  20px 90px ; 
   margin-bottom: 150px;
-
 }
 
 .card {
-  max-width: 300px;
   background-color: #430101;
   text-align: center;
   font-family: sans-serif;
   border-radius: 10px;
+  
 }
 
 .card img {
-  max-width: 400px;
-
   width: 100%;
+  max-width: 400px;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
@@ -290,8 +291,7 @@ body {
 
 .card p a{
   margin-top: 10px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 900;
@@ -500,6 +500,9 @@ footer{
     padding-left: 90px;
     }
   
+
+
+
 
 
 
