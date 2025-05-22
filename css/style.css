@@ -137,16 +137,16 @@ body {
 
 
 .content {
-  max-width: 1200px;
-  padding: 20px 65px;
+  max-width: 1000px;
+  padding: 20px 60px;
   margin-bottom: 60px;
   color: rgb(213, 213, 213);
 }
 
 
 .content1 {
-  padding: 20px 65px;
-  max-width: 1200px;
+  padding: 20px 60px;
+  max-width: 1000px;
   margin-bottom: 120px;
   color: rgb(213, 213, 213);
 }
@@ -629,14 +629,14 @@ footer{
 
 .content {
   width: 100%;
-  max-width: 400px;
-  padding: 50px 25px;
+  max-width: 600px;
+  padding: 50px 20px;
 }
 
 
 .content1 {
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   padding: 50px 25px;
 }
 
@@ -1006,7 +1006,7 @@ footer{
       .testo {
         position: relative;
         z-index: 2;
-        max-width: 450px;
+        max-width: 400px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -1028,10 +1028,9 @@ footer{
         content: "";
         position: absolute;
         bottom: 0;
-        left: 220px;
+        left: 200px;
         transform: translateX(-50%);
         width: 100%;
-        max-width: 440px;
         height: 1px;
         background-color: rgb(178, 170, 170);
       }
@@ -1040,6 +1039,8 @@ footer{
         width: 100%;
         max-width: 440px;
         margin: 0;
+        margin-top: 10px;
+        padding-left: 5px;
       }
       
       .nav-bar a:first-of-type {
@@ -1051,7 +1052,8 @@ footer{
         text-decoration: none;
         font-size: 13px;
         margin: 0;
-        padding-right: 20px; 
+        padding-right: 15px; 
+        margin-top: 10px;
       }
       
       .nav-bar a:hover{
@@ -1064,15 +1066,15 @@ footer{
 
 .content {
   width: 100%;
-  max-width: 440px;
-  padding: 60px 0;
+  max-width: 300px;
+  padding: 60px 10px;
 }
 
 
 .content1 {
   width: 100%;
-  max-width: 440px;
-  padding: 30px 20px;
+  max-width: 300px;
+  padding: 30px 15px;
 }
 
 .content1 h1 {
