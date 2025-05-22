@@ -262,13 +262,13 @@ body {
 /* card */
 
 .immagini-blocco {
-  width: 100%;
+  margin-bottom: 150px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   max-width: 1250px;
-  display: flex;
-  justify-content: space-between;
-  gap: 18px; 
-  padding:  20px 90px ; 
-  margin-bottom: 150px;
+  margin: 32px auto;
+  gap: 16px;
+  padding:  20px 90px ;
 }
 
 .card {
@@ -276,25 +276,30 @@ body {
   text-align: center;
   font-family: sans-serif;
   border-radius: 10px;
-  
 }
 
 .card img {
+  height: 230px;
   width: 100%;
-  max-width: 400px;
-  height: 200px;
-  border-radius: 10px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   background-size: cover;
 }
 
 .card p a{
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 900;
+
+}
+
+.card p a:hover{
+  color: #b6ffaf; 
+  transition: color 0.2s ease;
 }
 
 .card:hover {
@@ -317,7 +322,6 @@ body {
 
 .immagine-box {
   width: 100%;
-  max-width: 1500px;         
   overflow: hidden;
   margin-top: 40px;
 }
@@ -775,9 +779,10 @@ footer{
 /* card */
 
     .immagini-blocco{
+      grid-template-columns: 1fr;
       flex-direction: column;
       align-items: center;
-      padding: 10px 0px;
+      padding: 10px 90px;
     }
   
     .card {
