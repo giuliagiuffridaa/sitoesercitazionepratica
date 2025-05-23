@@ -939,9 +939,22 @@ footer p{
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 470px;
     margin-top: 10px;
     padding-bottom: 10px;
     position: relative;
+  }
+
+
+  .nav-bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    background-color: rgb(178, 170, 170);
   }
 
 
@@ -960,9 +973,8 @@ footer p{
 .nav-bar p {
   color: rgb(213, 213, 213);
   text-decoration: none;
-  font-size: 14px;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .nav-bar a:first-of-type {
@@ -972,9 +984,9 @@ footer p{
 .nav-bar a {
   color: rgb(213, 213, 213);
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
   margin: 0;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 .nav-bar a:hover{
@@ -1139,7 +1151,7 @@ footer p{
 
   .contenuti-scrollabili li,p,h2{
     width: 100%;
-    max-width: 370px;
+    max-width: 340px;
     margin: 0 auto;
   }
 
@@ -1156,7 +1168,7 @@ footer p{
 
   .titolo-sticky {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 300px;
     position: static;
     margin-left: 0;
    
@@ -1169,7 +1181,6 @@ footer p{
     font-size: 20px;
     font-weight: 800;
     padding: 10px;
-
   }
 
   .contenuti-scrollabili p{
@@ -1209,7 +1220,7 @@ footer p{
 
 .blocco-immagine{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   margin: 0 auto;
   gap: 0;
   padding:  20px 5px ;
@@ -1230,7 +1241,7 @@ footer p{
 
 .card img {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 320px;
   height: 200px;
   width: 100%;
   object-fit: cover;
