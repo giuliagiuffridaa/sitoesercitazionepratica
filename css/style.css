@@ -939,45 +939,32 @@ footer p{
   .nav-bar {
     display: flex;
     align-items: center;
-    width: 400px;
-    max-width: 400px;
-    margin-top: 0;
+    width: 100%;
+    max-width: 480px;
+    margin-top: 20px;
     padding-bottom: 10px;
     position: relative;
   }
 
 
-  .nav-bar::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    max-width: 480px;
-    height: 1px;
-    background-color: rgb(178, 170, 170);
-  }
-
-
   .testo-bar {
-    width: 440px;
-    max-width: 380px;
     position: relative;
     z-index: 2;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 15px;
+    max-width: 480px;
   }
   
   
 .nav-bar p {
   color: rgb(213, 213, 213);
   text-decoration: none;
+  font-size: 12px;
   margin: 0;
-  padding-left: 5px;
+  padding-left: 20px;
 }
 
 .nav-bar a:first-of-type {
@@ -987,9 +974,9 @@ footer p{
 .nav-bar a {
   color: rgb(213, 213, 213);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .nav-bar a:hover{
@@ -1002,7 +989,7 @@ footer p{
 
   
 .content {
-  width: 300px;
+  width: 320px;
   max-width: 300px;
   margin: 0 auto;
   padding: 0;
@@ -1024,7 +1011,7 @@ footer p{
 }
 
 .content1 h1,.content h1 {
-   font-size: 18px;
+   font-size: 20px;
    margin: 0;
    margin-bottom: 20px;
 }
